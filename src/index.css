@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+  color: black;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 85%;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 30px;
+
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  flex: 1;
+}
+
+.logo p {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f14f21;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  border-radius: 6px;
+}
+
+
+.links {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #f14f21;
+}
+
+
+.cv {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cv button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+
+  background: black;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cv button:hover {
+  background: #f14f21;
+}
