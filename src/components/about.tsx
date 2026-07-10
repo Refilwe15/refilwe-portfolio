@@ -6,10 +6,14 @@ const About = () => {
           <p>Hey!</p>
         </div>
         <div className="intro">
-          <p>I'm <b>Refilwe Mokoena</b></p>
+          <p>
+            I'm <b>Refilwe Mokoena</b>
+          </p>
         </div>
       </div>
+
     </div>
+    
   );
 };
 
