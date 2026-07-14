@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import "./index.css";
 import bg from "./assets/background.png";
-import Profile from "./components/profile";
+import Profile from "./components/Profile";
 import About from "./components/About";
+
 function App() {
   return (
     <>
@@ -21,8 +22,10 @@ function App() {
         <Navbar />
         <div className="content">
           <Profile />
-          <About />
+          
         </div>
+        <About />
+        
       </div>
     </>
   );
