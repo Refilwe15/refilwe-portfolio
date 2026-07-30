@@ -1,33 +1,26 @@
 import Navbar from "./components/Navbar";
 import "./index.css";
 import bg from "./assets/background.png";
-import Profile from "./components/Profile";
-import About from "./components/About";
+
+import Services from "./components/Services";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <div
-        style={{
-          position: "fixed",
-          inset: 0,
-          backgroundImage: `url(${bg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          zIndex: -1,
-        }}
+        className="page-background"
+        style={{ backgroundImage: `url(${bg})` }}
       />
-      <div className="App" style={{ minHeight: "100vh" }}>
-        <Navbar />
-        <div className="content">
-          <Profile />
-          
-        </div>
-        <About />
-        
-      </div>
-    </>
+
+      <Navbar />
+      <Hero />
+
+      <Services />
+
+      <Experience />
+    </div>
   );
 }
 
