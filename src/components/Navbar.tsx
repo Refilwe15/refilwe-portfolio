@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Menu07Icon } from "@hugeicons/core-free-icons";
+import cv from "../assets/RefilweMokoena-cv.pdf.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,9 @@ const Navbar = () => {
       </div>
 
       <div className="cv">
-        <button>Download CV</button>
+        <a href={cv} download="RefilweMokoena-CV.pdf">
+          Download CV
+        </a>
       </div>
     </nav>
   );
