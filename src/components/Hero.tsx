@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Profile from "./Profile";
 
-const bugs = ["one", "two", "three", "four"] as const;
+const bugs = ["one", "two", "three"] as const;
 
 const Hero = () => {
   const [squashedBugs, setSquashedBugs] = useState<string[]>([]);
@@ -22,9 +22,7 @@ const Hero = () => {
             onClick={() => {
               setSquashedBugs((current) => [...current, bug]);
               setSquashedCount((count) => count + 1);
-              setSquashMessage(
-                `Bug squashed! ${bugs.length - squashedCount - 1} left.`,
-              );
+              setSquashMessage("Nice catch!");
             }}
             onAnimationEnd={(event) => {
               if (event.animationName === "bug-squash") {
@@ -50,12 +48,13 @@ const Hero = () => {
           </button>
         ))}
       </div>
-      <span className="visually-hidden" aria-live="polite">
-        {squashMessage}
-      </span>
       <div className="hero-bug-hud">
         <span className="hero-bug-hint">Bugs are loose on the page. Squash them.</span>
+        <span className="hero-bug-feedback" role="status" aria-live="polite">
+          {squashMessage}
+        </span>
         <span className="hero-bug-counter" aria-live="polite">
+          
           Bugs squashed: {squashedCount}
         </span>
       </div>
@@ -76,7 +75,8 @@ const Hero = () => {
       </h1>
 
       <p className="hero-description">
-        Full-stack developer. I build things, break things, and fix them.
+        Computer Science graduate passionate about building useful
+        applications and solving real-world problems.
       </p>
 
       <div className="hero-actions">

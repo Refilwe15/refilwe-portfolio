@@ -77,6 +77,53 @@ const techItems = [
     ),
   },
   {
+    label: "Python",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 3.5c-4.8 0-4.5 2.1-4.5 2.1v3h4.6v1H5.7s-2.7-.3-2.7 4.5 2.4 4.3 2.4 4.3h1.4v-2s-.1-2.4 2.4-2.4h4.1s2.3 0 2.3-2.3V5.8s.4-2.3-3.6-2.3Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+        <circle cx="10" cy="6.5" r=".7" fill="currentColor" />
+        <path
+          d="M12 20.5c4.8 0 4.5-2.1 4.5-2.1v-3h-4.6v-1h6.4s2.7.3 2.7-4.5-2.4-4.3-2.4-4.3h-1.4v2s.1 2.4-2.4 2.4h-4.1s-2.3 0-2.3 2.3v5.9s-.4 2.3 3.6 2.3Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+        <circle cx="14" cy="17.5" r=".7" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    label: "Java",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8 15.5c0 1.4 1.8 2.2 4 2.2s4-.8 4-2.2"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
+        <path
+          d="M8 15.5v2.2c0 1.3 1.8 2.3 4 2.3s4-1 4-2.3v-2.2"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10 12c-1.2-1 .9-1.4.2-2.5m3.3 2.5c-1.2-1 .9-1.4.2-2.5M7 18.5c-1 .2-1.5.6-1.5 1.1 0 .8 2.9 1.4 6.5 1.4s6.5-.6 6.5-1.4c0-.5-.5-.9-1.5-1.1"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
     label: "Node.js",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,12 +260,12 @@ const TechStack = () => {
     <section className="tech-section" id="tech">
       <div className="section-heading">
         <h2>Tech I Work With</h2>
-        <div className="section-divider" />
+        <p>Tools I use to design, build, and bring ideas to life.</p>
       </div>
 
       <div className="tech-grid">
         {techItems.map((tech) => (
-          <div className="tech-pill" key={tech.label}>
+          <div className="tech-card" key={tech.label}>
             <span className="tech-icon">{tech.icon}</span>
             <span>{tech.label}</span>
           </div>

@@ -22,7 +22,6 @@ const Navbar = () => {
 
       <div className={`links ${menuOpen ? "open" : ""}`}>
         <a href="#experience">Experience</a>
-        <a href="#services">Services</a>
         <a href="#contact">Testimonials</a>
         <a href="#contact">Contact</a>
       </div>
