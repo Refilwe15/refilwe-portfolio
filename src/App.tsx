@@ -6,10 +6,11 @@ import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Techstack from "./components/Techstack";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="top">
       <div
         className="page-background"
         style={{ backgroundImage: `url(${bg})` }}
@@ -27,6 +28,7 @@ function App() {
       <Projects />
       <Techstack />
       <Experience />
+      <Footer />
     </div>
   );
 }

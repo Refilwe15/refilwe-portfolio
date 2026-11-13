@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Profile from "./Profile";
 
 const bugs = ["one", "two", "three"] as const;
 
@@ -48,6 +47,36 @@ const Hero = () => {
           </button>
         ))}
       </div>
+      <div className="hero-content">
+        <div className="hero-eyebrow">
+          <span className="hero-eyebrow-dot" />
+          FULL-STACK DEVELOPER <span className="hero-eyebrow-separator">•</span>{" "}
+          COMPUTER SCIENCE GRADUATE
+        </div>
+
+        <h1 className="hero-title">
+          Coffee in,
+          <br />
+          <span>code out.</span>
+        </h1>
+
+        <p className="hero-description">
+          I&apos;m a Computer Science graduate currently growing as a developer.
+          Through my experience at mLab, I&apos;ve had the opportunity to work on
+          projects, support other developers and continue improving my
+          technical skills.
+        </p>
+
+        <div className="hero-actions">
+          <a className="btn-contact" href="mailto:mrefilwe880@gmail.com">
+            Let&apos;s build something cool <span>›</span>
+          </a>
+          <a className="btn-work" href="#projects">
+            View my work
+          </a>
+        </div>
+      </div>
+
       <div className="hero-bug-hud">
         <span className="hero-bug-hint">Bugs are loose on the page. Squash them.</span>
         <span className="hero-bug-feedback" role="status" aria-live="polite">
@@ -57,32 +86,6 @@ const Hero = () => {
           
           Bugs squashed: {squashedCount}
         </span>
-      </div>
-
-      <div className="hero-visual">
-        <Profile />
-      </div>
-
-      <div className="hero-badge">
-        <span className="hero-badge-tag">Hey!</span>
-        <span>
-          I'm <b>Refilwe Mokoena</b>
-        </span>
-      </div>
-
-      <h1 className="hero-title">
-        Coffee in, code out.
-      </h1>
-
-      <p className="hero-description">
-        Computer Science graduate passionate about building useful
-        applications and solving real-world problems.
-      </p>
-
-      <div className="hero-actions">
-        <button className="btn-contact">
-          Let's build something cool <span>›</span>
-        </button>
       </div>
     </section>
   );
